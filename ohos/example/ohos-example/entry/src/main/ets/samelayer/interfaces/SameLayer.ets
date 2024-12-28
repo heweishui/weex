@@ -142,3 +142,18 @@ export class WebParams {
     this.src = '';
   }
 }
+
+@Observed
+export class ExtWebParams {
+  asMixWeb?: boolean
+  componentId: string
+  url: string
+  width?: number
+  height?: number
+
+  constructor() {
+    this.componentId = '';
+    this.url = '';
+    this.asMixWeb = false
+  }
+}

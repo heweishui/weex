@@ -31,6 +31,7 @@ import { NativeLottieBuilder } from '../samelayer/nativeComponents/Lottie/Lottie
 import { NativeRichTextBuilder } from '../samelayer/nativeComponents/RichText/RichText';
 import { NativeTextAreaBuilder } from '../samelayer/nativeComponents/TextArea/TextArea';
 import { NativeWebBuilder } from '../samelayer/nativeComponents/Web/Web';
+import { NativeExtWebBuilder } from '../samelayer/nativeComponents/ExtWeb/ExtWeb';
 
 import webview from '@ohos.web.webview';
 import { ParseUtil } from 'WebSceneKitHsp/src/main/ets/webrouterservice/common/util/ParseUtil';
@@ -77,6 +78,7 @@ export default class EntryAbility extends UIAbility {
     sameLayerManager.registerNativeComponentBuilders('richText', NativeRichTextBuilder)
     sameLayerManager.registerNativeComponentBuilders('textArea', NativeTextAreaBuilder)
     sameLayerManager.registerNativeComponentBuilders('web', NativeWebBuilder)
+    sameLayerManager.registerNativeComponentBuilders('extWeb', NativeExtWebBuilder)
   }
 
   onDestroy() {

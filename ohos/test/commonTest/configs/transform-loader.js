@@ -40,6 +40,11 @@ const componentMap = [
     isInPlugin: false
   },
   {
+    componentName: 'HlExtweb',
+    componentAddress: 'hl-extweb-base.vue',
+    isInPlugin: false
+  },
+  {
     componentName: 'HlTextarea',
     componentAddress: 'hl-textarea-base.vue',
     isInPlugin: false

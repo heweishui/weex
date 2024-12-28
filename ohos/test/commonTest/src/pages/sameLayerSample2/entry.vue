@@ -1,5 +1,11 @@
 <template>
   <div style="overflow-y: auto; margin-top: 40px">
+    <h5>自定义ExtWeb组件示例:</h5>
+    <hl-extweb-test
+      style="width: 100%;height: 500px;padding: 20px;margin-bottom: 100px;margin-top: 10px;"
+      :url="extwebSrc"
+      :asMixWeb="true"
+    />
     <h5>自定义Web组件示例:</h5>
     <hl-web-test
       v-if="isShow"
@@ -100,6 +106,7 @@ import HlLottieTest from "../../components/hl-lottie.vue";
 import boat from "../../assets/json/Boat_Loader.json";
 import HlTextareaTest from "../../components/hl-textarea.vue";
 import HlWebTest from "../../components/hl-web.vue";
+import HlExtwebTest from "../../components/hl-extweb.vue";
 const webview = weex.requireModule("webview");
 
 export default {
@@ -136,6 +143,7 @@ export default {
       message: "",
       inputSrc:"resource://rawfile/hanglv/pages/singlePage1/entry.html",
       isShow: true,
+      extwebSrc:"https://www.amap.com/"
     };
   },
   created() {},
@@ -145,6 +153,7 @@ export default {
     HlLottieTest,
     HlTextareaTest,
     HlWebTest,
+    HlExtwebTest
   },
   methods: {
     setSrc() {

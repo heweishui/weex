@@ -1,5 +1,12 @@
 <template>
   <div style="overflow-y: auto; margin-top: 60px">
+    <h5>自定义extweb组件示例:</h5>
+     <hl-extweb
+      class="common-style"
+      style="width: 100%; height:500px; padding: 20px"
+      :url="extwebSrc"
+      :asMixWeb="true"
+    ></hl-extweb>
     <h5>自定义web组件示例:</h5>
      <hl-web
       class="common-style"
@@ -120,6 +127,7 @@ export default {
       min: 0,
       max: 100,
       webSrc:"https://m.changyoyo.com/finance/apply/output/v_k1/index.html?params=eyJtb2JpbGUiOiIxNTUzNDAzMzYxOSIsIm91dFRva2VuSWQiOiIxNTUzNDAzMzYxOV9vdXQiLCJwYXJ0bmVySWQiOiJTODg4OTE4NyIsInN0b3JlSWQiOiJaSFgwMDEiLCJjaGFubmVsU291cmNlIjoiMDIwMTI4MTMiLCJtZXJTaWduIjoiZTU2ZmFhODhjYzk2ZDhjOTdmNDhmMmUyZjYzYmZkMjRkOThkODU1YyIsImZpZWxkTXNnIjoiMTIyNzA0MDkxIiwiY2FsbGJhY2tVcmwiOiIifQ%3D%3D",
+      extwebSrc:"https://www.amap.com/"
     };
   },
   methods: {
